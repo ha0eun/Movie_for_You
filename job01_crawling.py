@@ -18,8 +18,9 @@ review_xpath = '//*[@id="content"]/div[1]/div[4]/div[1]/div[4]' # 리뷰
 
 # '//*[@id="old_content"]/ul/li[1]/a'
 # '//*[@id="old_content"]/ul/li[20]/a'
-your_year = 2021
-for page in range(1, 39):      # 1페이지 - 31페이지 까지
+
+your_year = 2017   # 2016, 2017
+for page in range(1, 54):      # 1페이지 - 까지 60, 54
     url = 'https://movie.naver.com/movie/sdb/browsing/bmovie.naver?open={}&page={}'.format(your_year, page)
     titles = []
     reviews = []
