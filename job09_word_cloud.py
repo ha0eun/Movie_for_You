@@ -27,7 +27,7 @@ wordcloud_img = WordCloud(background_color='white', max_words=2000,
                           font_path=font_path).generate_from_frequencies(worddict)
 # max_words=2000 : 단어 2000개로 제한
 plt.figure(figsize=(12, 12))
-plt.imshow(wordcloud_img, interpolation='bilinear') # interpolation='bilinear' 블러 처리됨. 없어도 됨
+plt.imshow(wordcloud_img) # interpolation='bilinear' 블러 처리됨. 없어도 됨
 plt.axis('off')
 
 
